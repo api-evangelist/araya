@@ -1,23 +1,72 @@
 aid: araya
+
 name: Araya
-description: 'Araya is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+
+image: https://www.araya.org/wp-content/uploads/2021/04/arayatw.png
+
+description: 'Araya is a Japanese AI and neurotechnology company focused on integrating cutting‑edge artificial intelligence and brain‑machine interface research into business and daily life. The company offers custom AI development, edge AI consulting, advanced research support for large language models, and neurotech solutions aimed at improving industry processes and human‑machine interaction. Its mission is to create an overwhelmingly interesting future for workers, researchers, and society by bridging scientific innovation with practical applications.'
+
 url: https://raw.githubusercontent.com/api-evangelist/araya/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-25 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-25'
+
 modified: '2026-09-25'
+
+x-coverage:
+  state: unreadable
+  reason: no-machine-readable-spec
+  detail: The provider's website offers HTML documentation but no machine‑readable OpenAPI, AsyncAPI, GraphQL or other contract was found.
+  evidence:
+    - url: https://www.araya.org/en/
+      status: 200
+  checked: 2026-09-25
+
 tags:
-- Company
-apis: []
+- AI
+- Neurotechnology
+- Japan
+- Business
+- Innovation
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Hosts
+  url: hosts/araya-hosts.yml
+- type: Security
+  url: https://www.araya.org/security/
+- type: PrivacyPolicy
+  url: https://www.araya.org/privacy/
+- type: Newsroom
+  url: https://www.araya.org/publications_category_en/news/
+- type: DomainSecurity
+  url: security/araya-domain-security.yml
 - type: Website
-  url: https://equityzen.com/company/araya
+  url: https://www.araya.org/en/
+- type: Documentation
+  url: https://www.araya.org/en/about/company/
+- type: GettingStarted
+  url: https://www.araya.org/en/about/
+- type: Contact
+  url: https://www.araya.org/en/contact/
+
+apis: []
+x-enrichment:
+  date: '2026-09-25'
+  status: enriched
+  artifacts_added: 5
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local
