@@ -19,7 +19,7 @@ specificationVersion: '0.20'
 
 created: '2026-09-25'
 
-modified: '2026-09-25'
+modified: '2026-10-06'
 
 x-coverage:
   state: unreadable
@@ -50,6 +50,10 @@ maintainers:
   email: info@apis.io
 
 common:
+- url: https://www.araya.org/en/publications/
+  type: Blog
+- url: https://www.araya.org/en/publications/feed/
+  type: BlogRSS
 - type: Hosts
   url: hosts/araya-hosts.yml
 - type: Security
